@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer</title>
+    <link rel="shortcut icon" href="css/img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- == Icons == -->
+     <link rel="stylesheet" href="css/icons/css/all.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="load">
+        <a href="#home" class="skip"><i class="fas fa-arrow-up"></i></a>
+        <header class="header" id="header">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="css/img/profile.png" alt="Profile Image">
+                    <p>CHEBON</p>
+                </a>
+                <ul class="links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#footer">FOOTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="overlay" id="overLay">
+                    <div class="overlay-content">
+                        <span class="closebtn" title="Close Overlay" onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                        <div class="form" id="loading">
+                            <div class="form-head">
+                                <h1>Contact Me</h1>
+                            </div>
+                            <form>
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Enter Your Name">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Enter Your Email">
+                                <label for="">Enter Message</label>
+                                <textarea name="text" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                                <button onclick="loadScreen()">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="sent-message" id="load">
+                            <div class="message-loader" id="spinner">
+                                <div class="loader"></div>
+                            </div>
+                            <div class="sent-alert" id="message">
+                                <div class="icon"><i class="fas fa-check"></i></div>
+                                <p>Message Sent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-banner">
+                    <div class="banner-column">
+                        <div class="user-col">
+                            <div class="user-info-top">
+                                <div class="user-icon">
+                                    <div class="icon">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="user-infor-header">
+                                    <p>Hi, I'm <span>CHEBON</span></p>
+                                    <p>Web Designer & Developer Working For Asanti Cloud Consulting.</p>
+                                </div>
+                                <div class="user-info-footer">
+                                    <div class="user-contact">
+                                        <i class="fas fa-folder"></i>
+                                        <p>Web Developer & Designer</p>
+                                    </div>
+                                    <div class="user-contact">
+                                        <i class="fas fa-envelope"></i>
+                                        <p>kelvinchebon@gmail.com</p>
+                                    </div>
+                                    <div class="user-contact">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>Kenya, Nairobi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-col2">
+                            <div class="user-info-bottom">
+                                <span>Download my curriculum vitae.</span>
+                                <div class="downloads">
+                                    <button onclick="openSearch()">DOWNLOAD CV</button>
+                                    <button onclick="openSearch()">CONTACT ME</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-column">
+                        <div class="profile-img">
+                            <img src="css/img/background.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="experience" id="experience">
+                <div class="experience-head">
+                    <span>Over 3years of experience</span>
+                    <h1>My Experience</h1>
+                </div>
+                <div class="experience-body">
+                    <div class="experience-column">
+                        <div class="experience-left">
+                            <img src="css/img/portfolio-01.jpg" alt="" height="188px" width="250px">
+                            <div class="experience-center">
+                                <span>2018 - Present</span>
+                                <h4>Silk Road - Themes</h4>
+                                <h6>C.E.O WebDev Developer & Designer</h6>
+                                <p class="disc">Reinventing the way you create websites</p>
+                            </div>
+                        </div>
+                        <div class="experience-footer">
+                            <button onclick="openSearch()">CONTACT ME</button>
+                        </div>
+                    </div>
+                    <div class="experience-column">
+                        <div class="experience-left">
+                            <img src="css/img/portfolio-02.jpg" alt="" height="188px" width="250px">
+                            <div class="experience-center">
+                                <span>2018 - Present</span>
+                                <h4>Silk Road - Themes</h4>
+                                <h6>C.E.O WebDev Developer & Designer</h6>
+                                <p class="disc">Reinventing the way you create websites</p>
+                            </div>
+                        </div>
+                        <div class="experience-footer">
+                            <button onclick="openSearch()">CONTACT ME</button>
+                        </div>
+                    </div>
+                    <div class="experience-column">
+                        <div class="experience-left">
+                            <img src="css/img/portfolio-03.jpg" alt="" height="188px" width="250px">
+                            <div class="experience-center">
+                                <span>2018 - Present</span>
+                                <h4>Silk Road - Themes</h4>
+                                <h6>C.E.O WebDev Developer & Designer</h6>
+                                <p class="disc">Reinventing the way you create websites</p>
+                            </div>
+                        </div>
+                        <div class="experience-footer">
+                            <button onclick="openSearch()">CONTACT ME</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="education" id="education">
+                <div class="experience-head">
+                    <span>Bachelor Bsc, MIT & Programming</span>
+                    <h1>Education</h1>
+                </div>
+                <div class="experience-body">
+                    <div class="experience-column">
+                        <div class="experience-left">
+                            <img src="css/img/portfolio-04.jpg" alt="" height="188px" width="250px">
+                            <div class="experience-center">
+                                <span>2018 - Present</span>
+                                <h4>Silk Road - Themes</h4>
+                                <h6>C.E.O WebDev Developer & Designer</h6>
+                                <p class="disc">Reinventing the way you create websites</p>
+                            </div>
+                        </div>
+                        <div class="experience-footer">
+                            <button onclick="openSearch()">CONTACT ME</button>
+                        </div>
+                    </div>
+                    <div class="experience-column">
+                        <div class="experience-left">
+                            <img src="css/img/portfolio-05.jpg" alt="" height="188px" width="250px">
+                            <div class="experience-center">
+                                <span>2018 - Present</span>
+                                <h4>Silk Road - Themes</h4>
+                                <h6>C.E.O WebDev Developer & Designer</h6>
+                                <p class="disc">Reinventing the way you create websites</p>
+                            </div>
+                        </div>
+                        <div class="experience-footer">
+                            <button onclick="openSearch()">CONTACT ME</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="resume" id="resume">
+                <div class="resume-head">
+                    <span>4 Years of Experience</span>
+                    <h1>My Resume</h1>
+                </div>
+                <div class="resume-body">
+                    <div class="resume-tab-head">
+                        <button class="tab active">Education</button>
+                        <button class="tab">Skills</button>
+                        <button class="tab">Experience</button>
+                    </div>
+                    <div class="resume-tab-content">
+                        <div class="tabbing active">
+                            <div class="education-head">
+                                <span>2013 - Present</span>
+                                <h1>Education Journey</h1>
+                            </div>
+                            <div class="education-content">
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Primary Education (K.C.P.E)</h2>
+                                                    <p>Green Park Acedemy( 2010 - 2012 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Secondary Education (K.C.S.E)</h2>
+                                                    <p>Kapsabet Boys High School( 2013 - 2017 )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Full Stack Software Development</h2>
+                                                    <p>Emobillis Training Institute( 2018 - 2019 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Computer Science Degree</h2>
+                                                    <p>Africa Nazarene University( 2019 - current )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabbing">
+                            <div class="education-head">
+                                <span>2019 - Present</span>
+                                <h1>Skills Journey</h1>
+                            </div>
+                            <div class="education-content">
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Primary Education (K.C.P.E)</h2>
+                                                    <p>Green Park Acedemy( 2010 - 2012 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Secondary Education (K.C.S.E)</h2>
+                                                    <p>Kapsabet Boys High School( 2013 - 2017 )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Full Stack Software Development</h2>
+                                                    <p>Emobillis Training Institute( 2018 - 2019 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Computer Science Degree</h2>
+                                                    <p>Africa Nazarene University( 2019 - current )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabbing">
+                            <div class="education-head">
+                                <span>2013 - Present</span>
+                                <h1>Experience Journey</h1>
+                            </div>
+                            <div class="education-content">
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Primary Education (K.C.P.E)</h2>
+                                                    <p>Green Park Acedemy( 2010 - 2012 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Kenya Certificate Of Secondary Education (K.C.S.E)</h2>
+                                                    <p>Kapsabet Boys High School( 2013 - 2017 )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edu-rw">
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Full Stack Software Development</h2>
+                                                    <p>Emobillis Training Institute( 2018 - 2019 )</p>
+                                                </div>
+                                                <span>4.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-col">
+                                        <div class="edu-inner">
+                                            <div class="edu-heading">
+                                                <div class="edu-title">
+                                                    <h2>Computer Science Degree</h2>
+                                                    <p>Africa Nazarene University( 2019 - current )</p>
+                                                </div>
+                                                <span>2.5 / 5.0</span>
+                                            </div>
+                                            <div class="edu-content">
+                                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, habits, and personal development. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="blog-head">
+                    <span>Visit My Portfolio & Leave A FeedBack</span>
+                    <h1>My Portfolio</h1>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/portfolio-04.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">HTML CSS</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="far fa-heart"></i>20</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link"  href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/portfolio-02.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">ANDROID</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="far fa-heart"></i>8.5m</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link"  href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/portfolio-03.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">ANGULAR</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="far fa-heart"></i>6.1k</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link" href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog" id="blog">
+                <div class="blog-head">
+                    <span>Visit My Blog & Leave A FeedBack</span>
+                    <h1>My Blog</h1>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/blog-01.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">KENYA</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="fas fa-clock"></i>2 min Read</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link"  href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/blog-02.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">DEVELOPMENT</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="fas fa-clock"></i>2 hours Read</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link"  href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-column">
+                        <div class="rn-blog">
+                            <div class="inner">
+                                <img src="css/img/blog-03.jpg" alt="">
+                                <div class="bottom">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="#">APPLICATION</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><i class="fas fa-clock"></i>2 min Read</span>
+                                        </div>
+                                    </div>
+                                    <a id="blog-link" href="#">The Service Provide For Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="logo-thumbnail">
+                        <img src="css/img/profile.png" alt="">
+                        <p>CHEBON</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-menu">
+                        <h6>RESOURCES</h6>
+                        <ul>
+                            <li><a href="#">Authentication</a></li>
+                            <li><a href="#">Database</a></li>
+                            <li><a href="#">Storage</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-menu">
+                        <h6>RESOURCES</h6>
+                        <ul>
+                            <li><a href="#">Authentication</a></li>
+                            <li><a href="#">Database</a></li>
+                            <li><a href="#">Storage</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-menu">
+                        <h6>RESOURCES</h6>
+                        <ul>
+                            <li><a href="#">Authentication</a></li>
+                            <li><a href="#">Database</a></li>
+                            <li><a href="#">Storage</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2021. All rights reserved by Chebon Kibet</div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
