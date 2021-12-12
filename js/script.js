@@ -53,12 +53,32 @@ $(document).ready(function(){
 
 
 /* === Overlay === */
-function openSearch() {
-    document.getElementById("overLay").style.display = "block";
+function openContact() {
+    document.getElementById("contactOverlay").style.display = "block";
 }
 
-function closeSearch() {
-    document.getElementById("overLay").style.display = "none";
+function closeContact() {
+    document.getElementById("contactOverlay").style.display = "none";
+}
+
+
+
+function openPortfolio() {
+  document.getElementById("portfolioOverlay").style.display = "block";
+}
+
+function closePortfolio() {
+  document.getElementById("portfolioOverlay").style.display = "none";
+}
+
+
+
+function openBlog() {
+  document.getElementById("blogOverlay").style.display = "block";
+}
+
+function closeBlog() {
+  document.getElementById("blogOverlay").style.display = "none";
 }
 /* === Overlay === */
 $(window).on("load", function() {
@@ -66,15 +86,31 @@ $(window).on("load", function() {
   $(".load").fadeIn(4000);
 });
 
-const loading = document.getElementById('load');
-
+/*
 var loadCircle;
 
 function loadScreen() {
-  loadCircle = setTimeout(showAlert, 2000);
+  loadCircle = setTimeout(showAlert, 500);
 }
 
 function showAlert() {
   document.getElementById("spinner").style.display = "none";
   document.getElementById("message").style.display = "block";
 }
+*/
+
+
+/* == Scroll Reveal == */
+ScrollReveal().reveal('.experience-head', { delay: 500 });
+ScrollReveal().reveal('.experience-body', { delay: 500 });
+ScrollReveal().reveal('.experience-column', { delay: 500 });
+ScrollReveal().reveal('.resume-head', { delay: 500 });
+ScrollReveal().reveal('.resume-body', { delay: 500 });
+ScrollReveal().reveal('.resume-tab-head', { delay: 500 });
+ScrollReveal().reveal('.resume-tab-content', { delay: 500 });
+ScrollReveal().reveal('.blog-head', { delay: 500 });
+ScrollReveal().reveal('.blog-body', { delay: 500 });
+ScrollReveal().reveal('.blog-column', { delay: 500 });
+/* == || Scroll Reveal == */
+
+

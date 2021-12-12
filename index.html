@@ -39,9 +39,9 @@
         </header>
         <main>
             <section class="home" id="home">
-                <div class="overlay" id="overLay">
-                    <div class="overlay-content">
-                        <span class="closebtn" title="Close Overlay" onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                <div class="contact-overlay" id="contactOverlay">
+                    <div class="contact-overlay-content">
+                        <span class="closebtn" title="Close Overlay" onclick="closeContact()"><i class="fas fa-times"></i></span>
                         <div class="form" id="loading">
                             <div class="form-head">
                                 <h1>Contact Me</h1>
@@ -100,8 +100,8 @@
                             <div class="user-info-bottom">
                                 <span>Download my curriculum vitae.</span>
                                 <div class="downloads">
-                                    <button onclick="openSearch()">DOWNLOAD CV</button>
-                                    <button onclick="openSearch()">CONTACT ME</button>
+                                    <button onclick="openContact()">DOWNLOAD CV</button>
+                                    <button onclick="openContact()">CONTACT ME</button>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="experience-footer">
-                            <button onclick="openSearch()">CONTACT ME</button>
+                            <button onclick="openContact()">CONTACT ME</button>
                         </div>
                     </div>
                     <div class="experience-column">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="experience-footer">
-                            <button onclick="openSearch()">CONTACT ME</button>
+                            <button onclick="openContact()">CONTACT ME</button>
                         </div>
                     </div>
                     <div class="experience-column">
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                         <div class="experience-footer">
-                            <button onclick="openSearch()">CONTACT ME</button>
+                            <button onclick="openContact()">CONTACT ME</button>
                         </div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                         <div class="experience-footer">
-                            <button onclick="openSearch()">CONTACT ME</button>
+                            <button onclick="openContact()">CONTACT ME</button>
                         </div>
                     </div>
                     <div class="experience-column">
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         <div class="experience-footer">
-                            <button onclick="openSearch()">CONTACT ME</button>
+                            <button onclick="openContact()">CONTACT ME</button>
                         </div>
                     </div>
                 </div>
@@ -419,13 +419,39 @@
                 </div>
             </section>
             <section class="portfolio" id="portfolio">
+                <div class="portfolio-overlay" id="portfolioOverlay">
+                    <div class="portfolio-overlay-content">
+                        <span class="closebtn" title="Close Overlay" onclick="closePortfolio()"><i class="fas fa-times"></i></span>
+                        <div class="portfolio-content">
+                            <div class="column">
+                                <img src="css/img/portfolio-04.jpg" alt="">
+                            </div>
+                            <div class="column">
+                                <div class="inner-content">
+                                    <div class="top-head">
+                                        <span>Featured - Design</span>
+                                        <h1>App Design Development</h1>
+                                    </div>
+                                    <div class="top-paragh">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                    </div>
+                                    <div class="top-btns">
+                                        <button>LIKE THIS <i class="fas fa-thumbs-up"></i></button>
+                                        <button>VIEW PROJECT <i class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="blog-head">
                     <span>Visit My Portfolio & Leave A FeedBack</span>
                     <h1>My Portfolio</h1>
                 </div>
                 <div class="blog-body">
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openPortfolio()">
                             <div class="inner">
                                 <img src="css/img/portfolio-04.jpg" alt="">
                                 <div class="bottom">
@@ -443,7 +469,7 @@
                         </div>
                     </div>
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openPortfolio()">
                             <div class="inner">
                                 <img src="css/img/portfolio-02.jpg" alt="">
                                 <div class="bottom">
@@ -461,7 +487,7 @@
                         </div>
                     </div>
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openPortfolio()">
                             <div class="inner">
                                 <img src="css/img/portfolio-03.jpg" alt="">
                                 <div class="bottom">
@@ -481,13 +507,54 @@
                 </div>
             </section>
             <section class="blog" id="blog">
+                <div class="blog-overlay" id="blogOverlay">
+                    <div class="blog-overlay-screen">
+                        <div class="blog-overlay-content">
+                            <span class="closebtn" title="Close Overlay" onclick="closeBlog()"><i class="fas fa-times"></i></span>
+                            <div class="blog-content">
+                                <div class="column">
+                                    <img src="css/img/portfolio-04.jpg" alt="">
+                                </div>
+                                <div class="column">
+                                    <div class="inner-content">
+                                        <div class="top-head">
+                                            <span>December 10<sup>th</sup>, 2021</span>
+                                        </div>
+                                        <div class="top-paragh">
+                                            <h1>Digital Marketo to Their New Office.</h1>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        </div>
+                                        <div class="top-paragh">
+                                            <h1>Digital Market.</h1>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        </div>
+                                        <div class="top-paragh">
+                                            <h1>Digital Marketo to Their New Office.</h1>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        </div>
+                                        <div class="top-paragh">
+                                            <h1>Digital Market.</h1>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        </div>
+                                        <div class="top-paragh">
+                                            <h1>Digital Marketo to Their New Office.</h1>
+                                            <p>Lorem, ipsum dolor sit amet adipisicing elit. Autem consectetur, consequuntur quibusdam optio laudantium corporis. Nihil repellendus optio pariatur in eum maxime officia amet similique! Quidem beatae libero rerum doloremque?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="blog-head">
                     <span>Visit My Blog & Leave A FeedBack</span>
                     <h1>My Blog</h1>
                 </div>
                 <div class="blog-body">
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openBlog()">
                             <div class="inner">
                                 <img src="css/img/blog-01.jpg" alt="">
                                 <div class="bottom">
@@ -505,7 +572,7 @@
                         </div>
                     </div>
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openBlog()">
                             <div class="inner">
                                 <img src="css/img/blog-02.jpg" alt="">
                                 <div class="bottom">
@@ -523,7 +590,7 @@
                         </div>
                     </div>
                     <div class="blog-column">
-                        <div class="rn-blog">
+                        <div class="rn-blog" onclick="openBlog()">
                             <div class="inner">
                                 <img src="css/img/blog-03.jpg" alt="">
                                 <div class="bottom">
